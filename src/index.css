@@ -9,6 +9,7 @@ body {
   font-family: 'Rajdhani','Segoe UI', sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ececec;
 }
 
 .app {
@@ -28,6 +29,7 @@ code {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 
 .header-elements {
@@ -64,22 +66,3 @@ code {
 }
 
 
-.main-text {
-  display: flex;
-  flex-direction: row;
-}
-
-.main-text img {
-  width: 300px;
-  height: 300px;
-  margin-right: 60px;
-  border-radius: 50%;
-}
-
-.main-text .text-headers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}

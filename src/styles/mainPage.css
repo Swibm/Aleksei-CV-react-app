@@ -1,0 +1,36 @@
+﻿.main-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    background-color: #ececec;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  }
+  
+  .main-text img {
+    width: 250px;
+    height: 250px;
+    margin-right: 60px;
+    border-radius: 50%;
+    background-color: aqua;
+  }
+  
+  .main-text .text-headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .text-bottom {
+    width: 400px;
+    color: #2e2e30;
+  }
+  
+  
+  

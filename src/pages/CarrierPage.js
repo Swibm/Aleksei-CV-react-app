@@ -1,8 +1,12 @@
 ﻿import React from 'react'
+import '../styles/carrierPage.css'
 
 const CarrierPage = () => {
   return (
-    <div>CarrierPage</div>
+    <>
+    <div className='carrier-card'>
+    </div>
+    </>
   )
 }
 

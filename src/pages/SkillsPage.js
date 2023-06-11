@@ -1,8 +1,13 @@
 ﻿import React from 'react'
+import { Widget } from '../components/Widget'
+import '../styles/skillsPage.css'
 
 const SkillsPage = () => {
   return (
-    <div>SkillsPage</div>
+    <div className='skills-card'>
+      <Widget/>
+    </div>
+    
   )
 }
 
