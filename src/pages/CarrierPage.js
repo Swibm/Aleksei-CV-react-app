@@ -7,17 +7,15 @@ const CarrierPage = () => {
 
     return (
       <>
-        <div className='carrier-card'>
-            <Accordion props = { CarrierAccBlockList[0] } />
-        </div>
-
-        <div className='carrier-card'>
-            <Accordion props = { CarrierAccBlockList[1] }/>
-        </div>
-
-        {/* <div>
-            {CarrierAccBlockList[0].obligations}
-        </div> */}
+          {CarrierAccBlockList.map((carrier, index) => (
+              <div className='carrier-card'
+                   key = {index}
+              >
+                  <Accordion props = { carrier } />
+              </div>
+              ) 
+            )
+          }
       </>
     )
 }

@@ -17,12 +17,17 @@ export const Widget = () => {
         <article className= {`card`}>
             <div className="buttons">
                 {buttonsList.map((button, index) => (
-                    <button className = {index === activeBlock ? "active" : ""}
-                            onClick={() => {toggleMenuBlock(index)}}
+                    <button className = { index === activeBlock ? "active" : "" }
+                            key = { buttonsList.indexOf(button) }
+                            onClick={
+                                    () => {toggleMenuBlock(index)}
+                                }
                             >
                         {button}
                     </button>
-                ))}
+                        )
+                    )
+                }
             </div>
             <div className = "wrapper">
                 <div className="content"
