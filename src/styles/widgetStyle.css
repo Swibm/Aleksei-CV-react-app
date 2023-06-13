@@ -40,7 +40,8 @@
     top: 0;
     left: 0;
     height: calc(400px * 3);
-    width: 350px;
+    width: 350
+    px;
     transition: 0.6s;
 }
 
