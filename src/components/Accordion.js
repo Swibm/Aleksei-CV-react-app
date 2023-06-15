@@ -7,8 +7,6 @@ export const Accordion = (props) => {
 
     const handleOpen = () => {setShow(!show)}
 
-    console.log(props.props)
-
   return (
     <div className="accordion-element">
         <div className="accordian-header" onClick={handleOpen}>
@@ -16,7 +14,7 @@ export const Accordion = (props) => {
             <div className="sign">{show ? '-' : '+'}</div>
         </div>
         {show && (
-            <div className="accordian-body">
+            <div className={show ?"accordian-body-active" : "accordian-body"}>
                 <div className="accordian-experience">
                     {props.props.experience_dur}
                 </div>  

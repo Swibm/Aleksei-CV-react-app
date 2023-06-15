@@ -1,36 +1,148 @@
-﻿.main-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    height: 400px;
-    background-color: #ececec;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-  }
-  
-  .main-text img {
-    width: 250px;
-    height: 250px;
-    margin-right: 60px;
-    border-radius: 50%;
-    background-color: aqua;
-  }
-  
-  .main-text .text-headers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .text-bottom {
-    width: 400px;
-    color: #2e2e30;
-  }
-  
-  
-  
+﻿.about-me-wrapper {
+margin-top: 60px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  height: 600px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  animation-name: main-card-render;
+  animation-duration: 2s;
+}
+
+.main-text .avatar-block {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.main-text .avatar-block h4 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  animation: general-text-render;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.main-text .avatar-block p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  animation: general-text-render;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.main-text .avatar-block img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: #eae7e6;
+  margin-bottom: 20px;
+}
+
+.main-text .text-headers {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2e2e30;
+}
+
+.main-text .text-headers h4 {
+  color: #fab631;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  animation: main-text-card-render;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.main-text .text-headers h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 0px; 
+  animation: main-text-card-render;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.main-text .text-headers h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  animation: main-text-card-render;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.main-text .text-headers p {
+  animation: general-text-render;
+  animation-duration: 2s;
+  position: relative;
+}
+
+.text-bottom {
+  width: 400px;
+  color: #2e2e30;
+}
+
+@media only screen and (max-width: 415px) {
+
+    .main-text {
+      display: inline-grid;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 350px;
+      height: 1000px;
+      margin: 50px 80px;
+    }
+
+    .text-headers {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      margin-top: 100px;
+    }
+
+    .avatar-block {
+      margin-top: -380px;
+      padding-left: 0px !important;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .main-text .avatar-block img {
+      max-width: 230px;
+      max-height: 230px;
+      position: relative;
+      top: -530px;
+      border: 7px solid #ffffff;
+      box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+@keyframes main-card-render {
+  from {left:-2000px;}
+  to {left:0px;}
+}
+
+@keyframes main-text-card-render {
+  from {left:4000px;}
+  to {left:0px;}
+}
+
+@keyframes general-text-render {
+  from {top:2000px;}
+  to {top:0px;}
+}

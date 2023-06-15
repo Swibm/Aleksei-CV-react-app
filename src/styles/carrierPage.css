@@ -1,21 +1,79 @@
-﻿.sign {
+﻿.carrier-block {
+    margin: 50px auto;
+    padding: 0 10px 15px 30px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    animation: carrier-card-render;
+    animation-duration: 1s;
+}
+
+.carrier-block>h4 {
+    margin: 20px 0 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fab631;
+}
+
+.sign {
     font-size: 25px;
-  }
-  .accordion-element {
-    width: 300px;
-    border: 1px solid rgb(133, 133, 133);
-  }
-  .accordian-header {
-    font-weight: 600;
-    font-size: 18px;
+}
+
+.accordion-element {
+    width: 600px;
+}
+.accordian-header {
+    font-weight: 500;
+    font-size: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 15px;
-    border: 2px solid rgb(133, 133, 133);
-    background-color: rgb(255, 255, 143);
+    padding: 10px 15px 0px;
+    background-color: #ffffff;
   }
-  .accordian-body {
-    padding: 15px 5px;
-  }
+
+.accordian-header:hover {
+    color: #fab631;
+}
+
+.accordian-body-active {
+    padding: 10px 20px;
+    animation: experience-text-render;
+    animation-duration: 1s;
+    position: relative;
+}
+
+@keyframes carrier-card-render {
+    from {left:-2000px;}
+    to {left:0px;}
+}
+
+
+@media only screen and (max-width: 415px) {
+    .carrier-block {
+        max-width: 330px;
+        padding: 0 15px 15px 30px;
+    }
+
+    .carrier-block h4 {
+        font-size: 25px;
+    }
+
+    .accordion-element {
+        max-width: 350px;
+    }
+
+    .accordian-header {
+        font-size: 17px;
+    }
+
+    .accordian-body-active {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,66 @@
+﻿.contacts-block {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    animation: contacts-card-render;
+    animation-duration: 1s;
+}
+
+.contacts-block>h4 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: #fab631;
+    font-weight: 500;
+}
+
+.contacts {
+    padding: 0 60px;
+}
+
+a.social-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact>p {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+@keyframes contacts-card-render {
+    from {left:-2000px;}
+    to {left:0px;}
+  }
+
+  @media only screen and (max-width: 415px) {
+    .contacts-block {
+        max-width: 360px;
+        max-height: 350px;
+    }
+
+    .contacts-block>h4{
+        font-size: 20px;
+    }
+
+    .contact>p {
+        font-size: 17px;
+    }
+
+    a.social-icon {
+        width: 20px;
+        height: 20px;
+    }
+  }

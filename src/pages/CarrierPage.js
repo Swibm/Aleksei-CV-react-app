@@ -6,16 +6,19 @@ import { CarrierAccBlockList } from "../constants";
 const CarrierPage = () => {
 
     return (
-      <>
-          {CarrierAccBlockList.map((carrier, index) => (
+      <>  
+        <div className = 'carrier-block'>
+        <h4>Carrier history</h4>
+            {CarrierAccBlockList.map((carrier, index) => (
               <div className='carrier-card'
-                   key = {index}
+              key = { index }
               >
-                  <Accordion props = { carrier } />
-              </div>
-              ) 
-            )
-          }
+                    <Accordion props = { carrier } />
+                </div>
+                ) 
+                )
+              }
+        </div>
       </>
     )
 }

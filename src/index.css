@@ -9,7 +9,7 @@ body {
   font-family: 'Rajdhani','Segoe UI', sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ececec;
+  background-color: #f7f7f7e1;
 }
 
 .app {
@@ -29,7 +29,8 @@ code {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header-elements {
@@ -47,14 +48,21 @@ code {
   text-align: center;
   justify-content: center;
   font-weight: 400;
+  color: #edf0f4;
 }
 
 .header-element > a {
   text-decoration: none;
+  font-size: 18px;
+}
+
+.header-element > a.active {
+  color: #fab631;
+
 }
 
 .header-element > a:hover {
-  color: red;
+  color: #fab631;
 }
 
 .about-me-wrapper {
@@ -65,4 +73,27 @@ code {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 415px) {
+
+    .app-header {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+    .header-element {
+      height: 30px;
+      width: 70px;
+      margin: 0 5px;
+      border-radius: 10px;
+    }
+
+    .header-element > a {
+      text-decoration: none;
+      font-size: 15px;
+    } 
+}
 

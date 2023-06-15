@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,16 +7,16 @@ const Header = () => {
       <nav className='app-header'>
         <div className='header-elements'>
                   <div className='header-element'>
-                      <Link to="/">About me</Link>
+                      <NavLink activeClassName = "active" to="/">About me</NavLink>
                   </div>
                 <div className='header-element'>
-                    <Link to="/carrier">Carrier</Link>
+                    <NavLink activeClassName = "active" to="/carrier">Carrier</NavLink>
                 </div>
                 <div className='header-element'>
-                    <Link to="/skills"> Skills </Link>
+                    <NavLink activeClassName = "active" to="/skills"> Skills </NavLink>
                 </div>
                 <div className='header-element'>
-                    <Link to="/contacts"> Contacts</Link>
+                    <NavLink activeClassName = "active" to="/contacts"> Contacts</NavLink>
                 </div>
         </div>
       </nav>

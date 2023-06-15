@@ -1,8 +1,7 @@
 ﻿import { useState } from "react";
-import "../styles/widgetStyle.css"
 import { SkillsBlockList } from "../constants";
 
-const menuHeight = "400px"
+const menuHeight = "500px"
 
 const buttonsList = ["Power BI", "Python", "Data Bases", "GIT", "Other"]
 
@@ -18,7 +17,7 @@ export const Widget = () => {
             <div className="buttons">
                 {buttonsList.map((button, index) => (
                     <button className = { index === activeBlock ? "active" : "" }
-                            key = { buttonsList.indexOf(button) }
+                            key = { index }
                             onClick={
                                     () => {toggleMenuBlock(index)}
                                 }
@@ -34,10 +33,11 @@ export const Widget = () => {
                      style = {{translate: `0 calc(0px - ${menuHeight} * ${activeBlock})`
                             }}
                 >
-                    {SkillsBlockList.map(block => 
-                        <div className="block" key = { SkillsBlockList.indexOf(block) }>
+                    {SkillsBlockList.map((block, index) => 
+                        <div className="block" key = { index }>
                             {block}    
-                        </div>)
+                        </div>
+                        )
                     }
                 </div>
             </div>
