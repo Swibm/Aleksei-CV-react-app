@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/%7BAleksei-CV-react-app%7D/static/css/main.94f31a9d.css",
+    "main.js": "/%7BAleksei-CV-react-app%7D/static/js/main.38e9bfbf.js",
+    "static/media/avatar.jpg": "/%7BAleksei-CV-react-app%7D/static/media/avatar.285238a5c879231f6acf.jpg",
+    "index.html": "/%7BAleksei-CV-react-app%7D/index.html",
+    "main.94f31a9d.css.map": "/%7BAleksei-CV-react-app%7D/static/css/main.94f31a9d.css.map",
+    "main.38e9bfbf.js.map": "/%7BAleksei-CV-react-app%7D/static/js/main.38e9bfbf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94f31a9d.css",
+    "static/js/main.38e9bfbf.js"
+  ]
+}
