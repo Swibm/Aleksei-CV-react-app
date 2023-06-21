@@ -1,6 +1,6 @@
 ﻿import React from 'react'
 import avatar from '../images/avatar.jpg'
-import '../styles/mainPage.css'
+import "../styles/mainPage.css"
 
 const AboutMePage = () => {
   return (

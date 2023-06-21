@@ -8,7 +8,7 @@ const CarrierPage = () => {
     return (
       <>  
         <div className = 'carrier-block'>
-        <h4>Carrier history</h4>
+        <h4>Career history</h4>
             {CarrierAccBlockList.map((carrier, index) => (
               <div className='carrier-card'
               key = { index }

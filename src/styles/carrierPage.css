@@ -8,9 +8,9 @@
     justify-content: center;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    animation: carrier-card-render;
+    animation: carrier-render;
     animation-duration: 1s;
+    position: relative;
 }
 
 .carrier-block>h4 {
@@ -22,7 +22,21 @@
 
 .sign {
     font-size: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: solid 2px #f7f7f7;
+    background-color: #f7f7f7;
+    color: #000000;
 }
+
+.sign.active {
+    color: #fab631;
+}   
 
 .accordion-element {
     width: 600px;
@@ -42,14 +56,39 @@
     color: #fab631;
 }
 
+.accordian-header.active {
+    color: #fab631;
+}
+
 .accordian-body-active {
     padding: 10px 20px;
-    animation: experience-text-render;
+    animation: carrier-card-render;
     animation-duration: 1s;
     position: relative;
 }
 
+.accordian-experience {
+    margin-bottom: 10px;
+}
+
+.accordian-obligations {
+    white-space: pre-line
+}
+
+.accordion-work-duration {
+    color: #fab631;
+}
+
+.accordion-obligation-title {
+    margin-bottom: 10px;
+}
+
 @keyframes carrier-card-render {
+    from {top:-2000px;}
+    to {top:0px;}
+}
+
+@keyframes carrier-render {
     from {left:-2000px;}
     to {left:0px;}
 }
