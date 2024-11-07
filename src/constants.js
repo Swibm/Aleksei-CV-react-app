@@ -34,7 +34,7 @@
 </>,
 <>
     <h2>GIT</h2>
-    <p>Use git/gitlab basic functional for version control and deploying localk working projects</p>
+    <p>Use git/gitlab/bitbucket basic functional for version control and deploying local working projects</p>
 </>,
 <>
     <h2>Other</h2>
@@ -49,8 +49,35 @@
 </>]
 
 export const CarrierAccBlockList = [
+    {company: 'KNOPKADENGI - fintech (BI Analyst, Data Analyst)',
+        experience_dur: 'July.24 - Now',
+        obligations:`-Negotiations with customers who desire to possess certain dashboard for their needs (initial meeting, discussion of tech. task and wish list and etc.) \n
+                    -Full dashboard development based on Power BI platform (writing SQL for data-mining for reports, developing internal data modeling of dashboards, dashboard visualization and scheduled auto-refresh configuration) \n
+                    -Power BI Service administration (access providing, Row-level security, On-Premises Data Gateway support, activity monitoring) \n
+                    -Creating, supporting and monitoring of Data Base datamarts (PostgreSQL) that serve as data sources for dashboards \n
+                    -Maintaing, creating, debugging Metabase reports \n
+                    -Ad-hoc data uploading from Data Bases for customers \n
+                    -Maintaing, debugging and modification of existing dashboards \n
+                    -Creating, updating, debugging ETL processes based on Pentaho Data Integration \n
+                    -Administrating Microsoft accounts, access and Power BI licences via Microsoft Entra \n
+        ` 
+        },
+
+    {company: 'Appie.Tech (BI Analyst)',
+    experience_dur: 'Feb.24 - July.24',
+    obligations:`-Negotiations with customers who desire to possess certain dashboard for their needs (initial meeting, discussion of tech. task and wish list and etc.) \n
+                -Full dashboard development based on Power BI platform (writing SQL for data-mining for reports, developing internal data modeling of dashboards, dashboard visualization and scheduled auto-refresh configuration) \n
+                -Power BI Service administration (access providing, Row-level security, On-Premises Data Gateway support, activity monitoring) \n
+                -Creating, supporting and monitoring of Data Base datamarts (PostgreSQL) that serve as data sources for dashboards (DDL, DML, DQL) \n
+                -Ad-hoc data uploading from Data Bases for customers \n
+                -Maintaing, debugging and modification of existing dashboards \n
+                -Creating ETL processes based on Apache Airflow \n
+                -Administrating Microsoft accounts, access and Power BI licences via Microsoft Entra \n
+    ` 
+    },
+
     {company: 'Beeline (BI Analyst/Data Engineer)',
-    experience_dur: 'Jan.23 - Now',
+    experience_dur: 'Jan.23 - Jan.24',
     obligations:`-Negotiations with customers who desire to possess certain dashboard for their needs (initial meeting, discussion of tech. task and wish list and etc.) \n
                 -Full dashboard development based on Power BI platform (connecting dashboards to datamarts, developing internal data modeling of dashboards, dashboard visualization and scheduled auto-refresh configuration) \n
                 -Power BI Service administration (access providing, Row-level security, On-Premises Data Gateway support,activity monitoring) \n
